@@ -7,7 +7,7 @@ import SwitchButton from '../ui/SwitchShowMode';
 
 const Header = () => {
     return (
-        <div className='h-14 flex justify-between items-center px-2 border-b border-[#33415580] relative z-40 bg-[#0E172A80] backdrop-blur-3xl'>
+        <div className='h-14 flex justify-between items-center px-2 border-b border-[#33415580] relative z-30 bg-[#0E172A80] backdrop-blur-3xl'>
             <Title>Crypto Currencies</Title>
 
             <div className='flex items-center gap-4'>
@@ -20,6 +20,7 @@ const Header = () => {
                 <TargetCurrencyDropdown />
 
                 <SwitchButton
+                    isSelect
                     optionOne={<i className='relative z-10 fad fa-list'></i>}
                     optionTwo={<i className='relative z-10 fad fa-grid-2'></i>}
                 />

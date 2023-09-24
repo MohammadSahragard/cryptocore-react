@@ -55,9 +55,9 @@ const CoinInfo = ({ data, selectedCurrency }) => {
 
 
                 <ProgressBar24hRange
-                    base={market_data?.low_24h?.[code?.toLowerCase()]}
-                    current={market_data?.current_price?.[code?.toLowerCase()]}
-                    total={market_data?.high_24h?.[code?.toLowerCase()]}
+                    base={market_data?.low_24h?.[code?.toLowerCase()??'usd']}
+                    current={market_data?.current_price?.[code?.toLowerCase()??'usd']}
+                    total={market_data?.high_24h?.[code?.toLowerCase()??'usd']}
                     symbol={symbol}
                     />
 
@@ -67,21 +67,21 @@ const CoinInfo = ({ data, selectedCurrency }) => {
                         <Title customClassName='text-sm font-normal text-opacity-75'>Market Cap</Title>
                         <Title customColor customClassName='text-sm font-normal text-slate-300 space-x-1'>
                             <span>{symbol}</span>
-                            <span>{separatorThousandsCurrency (market_data?.market_cap?.[code?.toLowerCase()])}</span>
+                            <span>{separatorThousandsCurrency (market_data?.market_cap?.[code?.toLowerCase()??'usd'])}</span>
                         </Title>
                     </div>
                     <div className='flex justify-between py-[13px]'>
                         <Title customClassName='text-sm font-normal text-opacity-75'>24 Hour Trading Vol</Title>
                         <Title customColor customClassName='text-sm font-normal text-slate-300 space-x-1'>
                             <span>{symbol}</span>
-                            <span>{separatorThousandsCurrency (market_data?.total_volume?.[code?.toLowerCase()])}</span>
+                            <span>{separatorThousandsCurrency (market_data?.total_volume?.[code?.toLowerCase()??'usd'])}</span>
                         </Title>
                     </div>
                     <div className='flex justify-between py-[13px]'>
                         <Title customClassName='text-sm font-normal text-opacity-75'>Fully Diluted Valuation</Title>
                         <Title customColor customClassName='text-sm font-normal text-slate-300 space-x-1'>
                             <span>{symbol}</span>
-                            <span>{separatorThousandsCurrency (market_data?.fully_diluted_valuation?.[code?.toLowerCase()])}</span>
+                            <span>{separatorThousandsCurrency (market_data?.fully_diluted_valuation?.[code?.toLowerCase()??'usd'])}</span>
                         </Title>
                     </div>
                     <div className='flex justify-between py-[13px]'>

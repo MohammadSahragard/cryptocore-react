@@ -22,7 +22,7 @@ const SearchBox = () => {
         <section className='relative w-full'>
             <input
                 type="text"
-                className={`search-currency_box w-full p-2 bg-[#334155] text-white border-none outline-none transition-all
+                className={`search-currency_box w-full p-2 bg-[#303f5a50] text-white border-none outline-none transition-all
                         hover:bg-[#334155] hover:border-[#4b5d78]`}
                 placeholder='Search'
                 maxLength='4'

@@ -44,7 +44,7 @@ const GlobalInfo = () => {
 
 
     return (
-        <div className='h-10 flex justify-center items-center gap-4 border-b border-[#33415580] relative overflow-x-auto'>
+        <div className='h-10 flex justify-center items-center gap-4 border-b border-[#33415580] relative overflow-x-auto z-30'>
             <div>
                 <SmallText>Coins: </SmallText>
                 <Link to='/cryptocurrencies'>

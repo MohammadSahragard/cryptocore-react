@@ -28,9 +28,9 @@ const TimeFramePercentageTable = ({ data, selectedCurrency }) => {
                 <Title
                     customColor
                     customClassName={`py-2 text-center font-normal 
-                                        ${price_change_percentage_1h_in_currency?.[selectedCurrency?.toLowerCase()] < 0 ? 'text-rose-500' : 'text-green-500'}
+                                        ${price_change_percentage_1h_in_currency?.[selectedCurrency?.toLowerCase()??'usd'] < 0 ? 'text-rose-500' : 'text-green-500'}
                 `}>
-                    {price_change_percentage_1h_in_currency?.[selectedCurrency?.toLowerCase()]?.toFixed(1)}%
+                    {price_change_percentage_1h_in_currency?.[selectedCurrency?.toLowerCase()??'usd']?.toFixed(1)}%
                 </Title>
             </div>
 
@@ -40,9 +40,9 @@ const TimeFramePercentageTable = ({ data, selectedCurrency }) => {
                 <Title
                     customColor
                     customClassName={`py-2 text-center font-normal 
-                                        ${price_change_percentage_24h_in_currency?.[selectedCurrency?.toLowerCase()] < 0 ? 'text-rose-500' : 'text-green-500'}
+                                        ${price_change_percentage_24h_in_currency?.[selectedCurrency?.toLowerCase()??'usd'] < 0 ? 'text-rose-500' : 'text-green-500'}
                 `}>
-                    {price_change_percentage_24h_in_currency?.[selectedCurrency?.toLowerCase()]?.toFixed(1)}%
+                    {price_change_percentage_24h_in_currency?.[selectedCurrency?.toLowerCase()??'usd']?.toFixed(1)}%
                 </Title>
             </div>
 
@@ -52,9 +52,9 @@ const TimeFramePercentageTable = ({ data, selectedCurrency }) => {
                 <Title
                     customColor
                     customClassName={`py-2 text-center font-normal 
-                                        ${price_change_percentage_7d_in_currency?.[selectedCurrency?.toLowerCase()] < 0 ? 'text-rose-500' : 'text-green-500'}
+                                        ${price_change_percentage_7d_in_currency?.[selectedCurrency?.toLowerCase()??'usd'] < 0 ? 'text-rose-500' : 'text-green-500'}
                 `}>
-                    {price_change_percentage_7d_in_currency?.[selectedCurrency?.toLowerCase()]?.toFixed(1)}%
+                    {price_change_percentage_7d_in_currency?.[selectedCurrency?.toLowerCase()??'usd']?.toFixed(1)}%
                 </Title>
             </div>
 
@@ -64,9 +64,9 @@ const TimeFramePercentageTable = ({ data, selectedCurrency }) => {
                 <Title
                     customColor
                     customClassName={`py-2 text-center font-normal 
-                                        ${price_change_percentage_14d_in_currency?.[selectedCurrency?.toLowerCase()] < 0 ? 'text-rose-500' : 'text-green-500'}
+                                        ${price_change_percentage_14d_in_currency?.[selectedCurrency?.toLowerCase()??'usd'] < 0 ? 'text-rose-500' : 'text-green-500'}
                 `}>
-                    {price_change_percentage_14d_in_currency?.[selectedCurrency?.toLowerCase()]?.toFixed(1)}%
+                    {price_change_percentage_14d_in_currency?.[selectedCurrency?.toLowerCase()??'usd']?.toFixed(1)}%
                 </Title>
             </div>
 
@@ -76,9 +76,9 @@ const TimeFramePercentageTable = ({ data, selectedCurrency }) => {
                 <Title
                     customColor
                     customClassName={`py-2 text-center font-normal 
-                                        ${price_change_percentage_30d_in_currency?.[selectedCurrency?.toLowerCase()] < 0 ? 'text-rose-500' : 'text-green-500'}
+                                        ${price_change_percentage_30d_in_currency?.[selectedCurrency?.toLowerCase()??'usd'] < 0 ? 'text-rose-500' : 'text-green-500'}
                 `}>
-                    {price_change_percentage_30d_in_currency?.[selectedCurrency?.toLowerCase()]?.toFixed(1)}%
+                    {price_change_percentage_30d_in_currency?.[selectedCurrency?.toLowerCase()??'usd']?.toFixed(1)}%
                 </Title>
             </div>
 
@@ -88,9 +88,9 @@ const TimeFramePercentageTable = ({ data, selectedCurrency }) => {
                 <Title
                     customColor
                     customClassName={`py-2 text-center font-normal 
-                                        ${price_change_percentage_1y_in_currency?.[selectedCurrency?.toLowerCase()] < 0 ? 'text-rose-500' : 'text-green-500'}
+                                        ${price_change_percentage_1y_in_currency?.[selectedCurrency?.toLowerCase()??'usd'] < 0 ? 'text-rose-500' : 'text-green-500'}
                 `}>
-                    {price_change_percentage_1y_in_currency?.[selectedCurrency?.toLowerCase()]?.toFixed(1)}%
+                    {price_change_percentage_1y_in_currency?.[selectedCurrency?.toLowerCase()??'usd']?.toFixed(1)}%
                 </Title>
             </div>
 

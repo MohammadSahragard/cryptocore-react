@@ -21,7 +21,7 @@ const HeaderCoinInfo = ({ data, selectedCurrency }) => {
 
 
     return (
-        <div className='h-14 flex justify-between items-center px-2 border-b border-[#33415580] relative z-40 bg-[#0E172A80] backdrop-blur-3xl'>
+        <div className='h-14 flex justify-between items-center px-2 border-b border-[#33415580] relative z-30 bg-[#0E172A80] backdrop-blur-3xl'>
 
 
             <Title customClassName='flex items-center gap-2 h-full'>
@@ -40,8 +40,8 @@ const HeaderCoinInfo = ({ data, selectedCurrency }) => {
                 <div>
                     <SmallText>Current Price: </SmallText>
                     <SmallText customColor customClassName='text-blue-500 relative z-50'>
-                            <span>{selectedCurrency?.symbol}</span>
-                            <span className='ms-1'>{separatorThousandsCurrency(market_data?.current_price?.[selectedCurrency?.code?.toLowerCase()])}</span>
+                            <span>{selectedCurrency?.symbol??'$'}</span>
+                            <span className='ms-1'>{separatorThousandsCurrency(market_data?.current_price?.[selectedCurrency?.code?.toLowerCase()??'usd'])}</span>
                     </SmallText>
                     <SmallText 
                         customColor

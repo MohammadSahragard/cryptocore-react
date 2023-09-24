@@ -26,7 +26,7 @@ const CurrencyConverter = ({ coinName, coinSymbol, selectedCurrency }) => {
 
     useEffect (() => {
         const fetchResult = async () => {
-            const data = await axios.get (`https://api.exchangerate.host/convert?from=BTC&to=${selectedCurrency&&selectedCurrency.code}&amount=${amount}`);
+            const data = await axios.get (`https://api.exchangerate.host/convert?from=BTC&to=${selectedCurrency?.code}&amount=${amount}`);
 
             setResult (data);
         };
@@ -45,7 +45,7 @@ const CurrencyConverter = ({ coinName, coinSymbol, selectedCurrency }) => {
                 <div className='space-x-2'>
                     <span className='font-normal text-sm bg-slate-600/40 px-1 ms-1 rounded'>{coinSymbol?.toUpperCase()}</span>
                     <i className='fal fa-arrow-right'></i>
-                    <span className='font-normal text-sm bg-slate-600/40 px-1 ms-1 rounded'>{selectedCurrency&&selectedCurrency.code}</span>
+                    <span className='font-normal text-sm bg-slate-600/40 px-1 ms-1 rounded'>{selectedCurrency?.code??'USD'}</span>
                 </div>
             </Title>
 
@@ -68,7 +68,7 @@ const CurrencyConverter = ({ coinName, coinSymbol, selectedCurrency }) => {
             </div>
 
             <Title>
-                {result&&result.query.amount} {coinSymbol?.toUpperCase ()} = {selectedCurrency&&selectedCurrency.symbol} {separatorThousandsCurrency (result&&result.result)}
+                {result?.query?.amount} {coinSymbol?.toUpperCase()} = {selectedCurrency?.symbol??'$'} {separatorThousandsCurrency (result?.result)}
             </Title>
 
         </div>

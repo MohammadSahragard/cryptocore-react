@@ -31,7 +31,7 @@ const Dropdown = ({children, dropdownItems = [], icon, isSelect, customClassName
             </button>
 
             <nav className={`grid auto-rows-[35px] divide-y divide-[#334155] border border-[#334155] rounded-md w-full bg-[#1E283C] text-slate-400  overflow-hidden ${customClassNameList}
-                            absolute top-[110%] left-0 transition-all origin-top z-50
+                            absolute top-[110%] left-0 transition-all origin-top z-40
                             ${dropdownState ? 'scale-y-100 opacity-100' : 'scale-y-0 opacity-0'}`}>
                 {
                     dropdownItems.map(item => <button 

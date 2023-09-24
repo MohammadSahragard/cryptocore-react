@@ -24,12 +24,13 @@ const TargetCurrencyDropdown = ({removeIcon, customClassName}) => {
     const selectCurrency = event => {
         dispatch ({type: 'SELECT_CURRENCY', payload: event.target.innerHTML});
         dispatch ({type: 'SEARCHED', payload: ''});
-        dropdownState && setDropdownState (false);
+        setDropdownState (false);
     };
 
 
     const toggleDropdown = () => {
         const searchBoxRef = document.querySelector ('.search-currency_box');
+        const modalCloser = document.querySelector ('.modal-closer');
 
         setDropdownState(prevState => !prevState);
         searchBoxRef.focus();
@@ -39,7 +40,7 @@ const TargetCurrencyDropdown = ({removeIcon, customClassName}) => {
 
     
     return (
-        <div className='relative modal show'>
+        <div>
             <button 
                     className={`flex gap-2 items-center text-slate-400 px-4 py-2 rounded-md ${customClassName}`}
                     onClick={toggleDropdown}
@@ -51,8 +52,8 @@ const TargetCurrencyDropdown = ({removeIcon, customClassName}) => {
 
 
 
-            <nav className={`grid grid-rows-[35px_auto] border border-[#334155] rounded-md bg-[#1E283C] text-slate-400
-                            absolute top-[110%] right-0 transition-all origin-top z-50
+            <nav className={`grid grid-rows-[35px_auto] border border-[#33415590] rounded-md bg-slate-900 text-slate-400 h-3/4 w-2/4
+                            fixed left-2/4 top-2/4 -translate-y-2/4 -translate-x-2/4 transition-all origin-top z-50
                             ${dropdownState ? 'scale-y-100 opacity-100' : 'scale-y-0 opacity-0'}`}
             >
 
@@ -60,23 +61,23 @@ const TargetCurrencyDropdown = ({removeIcon, customClassName}) => {
                 <CurrencySearchBox />
 
 
-                <div className='relative max-h-96 divide-y divide-[#334155] w-96 overflow-y-auto'>
+                <div className='h-full w-full divide-y divide-[#33415590] overflow-y-auto'>
                     {
                         state.data.currenciesCategory&&state.data.currenciesCategory.map (category => 
                             <div key={category} className='gird gird-rows-[35px_auto] space-y-2 p-2'>
                                 <div>
                                     <Title>{category.split('_').join(' ')}</Title>
                                 </div>
-                                <div className='grid grid-cols-5 auto-cols-[40px] gap-2'>
+                                <div className='flex gap-2 flex-wrap'>
                                     {
                                         searchedCurrencyTarget.filter (currencyTitle => currencyTitle.category === category).map (currency => 
                                             <button
                                                 key={currency.code}
                                                 type='button'
-                                                className={`px-2 py-1 cursor-pointer rounded transition-all
-                                                        hover:bg-[#4b5d7890]
+                                                className={`cursor-pointer rounded transition-all w-20 h-10 ring-1 ring-[#33415590]
+                                                          hover:bg-[#4b5d7830]
                                                             active:scale-95
-                                                            ${currency.code === state.selectedCurrency && 'ring-2 ring-indigo-500'}`}
+                                                            ${currency.code === state.selectedCurrency && 'border-2 border-indigo-500'}`}
                                                 onClick={selectCurrency}
                                             >
                                                 {currency.code}
@@ -93,7 +94,9 @@ const TargetCurrencyDropdown = ({removeIcon, customClassName}) => {
             </nav>
 
 
-            {/* <div className="fixed bg-rose-400/90 inset-0">mohammad</div> */}
+            <div className={`modal-closer bg-slate-900/20 backdrop-blur-lg z-40 transition-all fixed inset-0 ${dropdownState ? 'bottom-0' : 'bottom-full'}`}
+                 onClick={toggleDropdown}>
+            </div>
         </div>
     );
 };
