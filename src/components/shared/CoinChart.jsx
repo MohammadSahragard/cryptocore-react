@@ -283,7 +283,7 @@ const CoinChart = ({ data, coinId, selectedCurrency, helper }) => {
 
           <PrimaryButton
             customAttr={{'disabled': chartType === 'candlestick' ? true : false}}
-            customClassName='origin-left rounded-none text-orange'
+            customClassName='origin-left rounded-none text-orange truncate'
             isActive={dataSeries === 'market_caps' ? true : false}
             id="market_caps"
             clickHandler={() => setDataSeries('market_caps')}>
