@@ -1,0 +1,53 @@
+/* imports assets */
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@500;600;700&display=swap');
+
+
+
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: #1E283C;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #334155;
+    border: 2px solid #1E283C;
+}
+
+
+.logo {
+    font-family: 'Gemunu Libre', sans-serif;
+}
+
+
+
+
+/* coin section styles */
+.coin-description a {
+    color: #a246ff;
+}
+
+
+
+
+/* ------ chart styles */
+/* toolbar styles */
+.apexcharts-toolbar {
+    display: flex;
+    gap: 10px;
+    padding: 2px 0;
+    max-width: auto;
+}
+.apexcharts-toolbar div {
+    height: 100%;
+    transform: scale(1);
+    width: 20px;
+}
+/* tooltip styles */
+.apexcharts-tooltip {
+    background: #42475375 !important;
+    box-shadow: none !important;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+.apexcharts-tooltip-title {
+    background: #41507575 !important;
+}

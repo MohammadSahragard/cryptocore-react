@@ -1,0 +1,318 @@
+{
+    "data": {
+        "currenciesCategory": [
+            "Suggested_Currencies",
+            "Fiat_Currencies",
+            "Cryptocurrencies",
+            "Bitcoin_Units",
+            "Commodities"
+        ],
+        "currencies": [
+            {
+                "code": "USD",
+                "symbol": "$",
+                "category": "Suggested_Currencies"
+            },
+            {
+                "code": "EUR",
+                "symbol": "€",
+                "category": "Suggested_Currencies"
+            },
+            {
+                "code": "GBP",
+                "symbol": "£",
+                "category": "Suggested_Currencies"
+            },
+            {
+                "code": "RUB",
+                "symbol": "₽",
+                "category": "Suggested_Currencies"
+            },
+            {
+                "code": "CNY",
+                "symbol": "CN¥",
+                "category": "Suggested_Currencies"
+            },
+            {
+                "code": "JPY",
+                "symbol": "¥",
+                "category": "Suggested_Currencies"
+            },
+            {
+                "code": "TWD",
+                "symbol": "NT$",
+                "category": "Suggested_Currencies"
+            },
+            {
+                "code": "KRW",
+                "symbol": "₩",
+                "category": "Suggested_Currencies"
+            },
+            {
+                "code": "IDR",
+                "symbol": "IDR",
+                "category": "Fiat_Currencies"
+            },
+            {
+                "code": "AED",
+                "symbol": "AED",
+                "category": "Fiat_Currencies"
+            },
+            {
+                "code": "ARS",
+                "symbol": "ARS",
+                "category": "Fiat_Currencies"
+            },
+            {
+                "code": "AUD",
+                "symbol": "A$",
+                "category": "Fiat_Currencies"
+            },
+            {
+                "code": "BDT",
+                "symbol": "BDT",
+                "category": "Fiat_Currencies"
+            },
+            {
+                "code": "BHD",
+                "symbol": "BHD",
+                "category": "Fiat_Currencies"
+            },
+            {
+                "code": "BMD",
+                "symbol": "BMD",
+                "category": "Fiat_Currencies"
+            },
+            {
+                "code": "BRL",
+                "symbol": "R$",
+                "category": "Fiat_Currencies"
+            },
+            {
+                "code": "CAD",
+                "symbol": "CA$",
+                "category": "Fiat_Currencies"
+            },
+            {
+                "code": "CHF",
+                "symbol": "CHF",
+                "category": "Fiat_Currencies"
+            },
+            {
+                "code": "CLP",
+                "symbol": "CLP",
+                "category": "Fiat_Currencies"
+            },
+            {
+                "code": "CZK",
+                "symbol": "CZK",
+                "category": "Fiat_Currencies"
+            },
+            {
+                "code": "DKK",
+                "symbol": "DKK",
+                "category": "Fiat_Currencies"
+            },
+            {
+                "code": "HKD",
+                "symbol": "HK$",
+                "category": "Fiat_Currencies"
+            },
+            {
+                "code": "HUF",
+                "symbol": "HUF",
+                "category": "Fiat_Currencies"
+            },
+            {
+                "code": "ILS",
+                "symbol": "₪",
+                "category": "Fiat_Currencies"
+            },
+            {
+                "code": "INR",
+                "symbol": "₹",
+                "category": "Fiat_Currencies"
+            },
+            {
+                "code": "KWD",
+                "symbol": "KWD",
+                "category": "Fiat_Currencies"
+            },
+            {
+                "code": "LKR",
+                "symbol": "LKR",
+                "category": "Fiat_Currencies"
+            },
+            {
+                "code": "MMK",
+                "symbol": "MMK",
+                "category": "Fiat_Currencies"
+            },
+            {
+                "code": "MXN",
+                "symbol": "MX$",
+                "category": "Fiat_Currencies"
+            },
+            {
+                "code": "MYR",
+                "symbol": "RM",
+                "category": "Fiat_Currencies"
+            },
+            {
+                "code": "NGN",
+                "symbol": "NGN",
+                "category": "Fiat_Currencies"
+            },
+            {
+                "code": "NOK",
+                "symbol": "NOK",
+                "category": "Fiat_Currencies"
+            },
+            {
+                "code": "NZD",
+                "symbol": "NZ$",
+                "category": "Fiat_Currencies"
+            },
+            {
+                "code": "PHP",
+                "symbol": "₱",
+                "category": "Fiat_Currencies"
+            },
+            {
+                "code": "PKR",
+                "symbol": "PKR",
+                "category": "Fiat_Currencies"
+            },
+            {
+                "code": "PLN",
+                "symbol": "PLN",
+                "category": "Fiat_Currencies"
+            },
+            {
+                "code": "SAR",
+                "symbol": "SAR",
+                "category": "Fiat_Currencies"
+            },
+            {
+                "code": "SEK",
+                "symbol": "SEK",
+                "category": "Fiat_Currencies"
+            },
+            {
+                "code": "SGD",
+                "symbol": "S$",
+                "category": "Fiat_Currencies"
+            },
+            {
+                "code": "THB",
+                "symbol": "THB",
+                "category": "Fiat_Currencies"
+            },
+            {
+                "code": "TRY",
+                "symbol": "TRY",
+                "category": "Fiat_Currencies"
+            },
+            {
+                "code": "UAH",
+                "symbol": "UAH",
+                "category": "Fiat_Currencies"
+            },
+            {
+                "code": "VEF",
+                "symbol": "VEF",
+                "category": "Fiat_Currencies"
+            },
+            {
+                "code": "VND",
+                "symbol": "VND",
+                "category": "Fiat_Currencies"
+            },
+            {
+                "code": "ZAR",
+                "symbol": "ZAR",
+                "category": "Fiat_Currencies"
+            },
+            {
+                "code": "XDR",
+                "symbol": "XDR",
+                "category": "Fiat_Currencies"
+            },
+            {
+                "code": "BTC",
+                "symbol": "₿",
+                "category": "Cryptocurrencies"
+            },
+            {
+                "code": "ETH",
+                "symbol": "Ξ",
+                "category": "Cryptocurrencies"
+            },
+            {
+                "code": "LTC",
+                "symbol": "LTC",
+                "category": "Cryptocurrencies"
+            },
+            {
+                "code": "BCH",
+                "symbol": "BCH",
+                "category": "Cryptocurrencies"
+            },
+            {
+                "code": "BNB",
+                "symbol": "BNB",
+                "category": "Cryptocurrencies"
+            },
+            {
+                "code": "EOS",
+                "symbol": "EOS",
+                "category": "Cryptocurrencies"
+            },
+            {
+                "code": "XRP",
+                "symbol": "XRP",
+                "category": "Cryptocurrencies"
+            },
+            {
+                "code": "XLM",
+                "symbol": "XLM",
+                "category": "Cryptocurrencies"
+            },
+            {
+                "code": "LINK",
+                "symbol": "LINK",
+                "category": "Cryptocurrencies"
+            },
+            {
+                "code": "DOT",
+                "symbol": "DOT",
+                "category": "Cryptocurrencies"
+            },
+            {
+                "code": "YFI",
+                "symbol": "YFI",
+                "category": "Cryptocurrencies"
+            },
+            {
+                "code": "BITS",
+                "symbol": "BITS",
+                "category": "Bitcoin_Units"
+            },
+            {
+                "code": "SATS",
+                "symbol": "SATS",
+                "category": "Bitcoin_Units"
+            },
+            {
+                "code": "XAG",
+                "symbol": "XAG",
+                "category": "Commodities"
+            },
+            {
+                "code": "XAU",
+                "symbol": "XAU",
+                "category": "Commodities"
+            }
+        ]
+    }
+}
